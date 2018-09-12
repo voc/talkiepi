@@ -15,8 +15,8 @@ import (
 func (b *Talkiepi) Init() {
 	b.Config.Attach(gumbleutil.AutoBitrate)
 	b.Config.Attach(b)
-
-	b.initGPIO()
+	b.EV()
+	//b.initGPIO()
 
 	b.Connect()
 }
